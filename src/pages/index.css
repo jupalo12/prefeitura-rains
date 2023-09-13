@@ -269,6 +269,53 @@ label span:nth-child(3) {
   font-weight: bold;
 }
 
+.ondeIr {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  top: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.inline {
+  display: inline-flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.locals {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 7px;
+  padding: 5px;
+  padding-top: 0;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+.locals p {
+  text-align: start;
+  color: #787486;
+  width: 85%;
+  margin: 0 auto;
+}
+.close {
+  text-align: start;
+  padding-left: 7%;
+}
+
+.locals span {
+}
+
+.localName {
+  font-weight: 600;
+  font-size: 10px;
+}
+
 /* Agendar */
 .footer {
   display: inline-flex;
@@ -478,12 +525,12 @@ label span:nth-child(3) {
   flex-direction: column;
   gap: 10px;
 }
- .diaHora span {
-font-size: 18px;
-font-weight: 600;
-color: #0165fc;
-font-family: "Poppins", sans-serif;
- }
+.diaHora span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0165fc;
+  font-family: "Poppins", sans-serif;
+}
 
 .infoBtn {
   position: unset;
@@ -515,16 +562,14 @@ font-family: "Poppins", sans-serif;
 }
 /* InfoServices */
 
-
 /* Sucesso */
 
-.agendamento{
+.agendamento {
   text-align: center;
   display: block;
-  
 }
 
-.sucess{
+.sucess {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -539,20 +584,20 @@ font-family: "Poppins", sans-serif;
   align-items: center;
 }
 
-.dataSucess{
+.dataSucess {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.horarioSucess{
+.horarioSucess {
   font-size: 40px;
   color: #0165fc;
   font-weight: 600;
   line-height: 65px;
 }
 
-.BtnFinal{
+.BtnFinal {
   position: inherit;
 }
 /* Sucesso */

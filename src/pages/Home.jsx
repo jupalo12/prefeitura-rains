@@ -9,8 +9,8 @@ import Phones from "../data/phone.png";
 import Comercial from "../data/casa.png";
 import Others from "../data/more.png";
 import Splash from "./Splash";
-import PacmanLoader from "react-spinners/PacmanLoader";
-import ClockLoader from "react-spinners/ClockLoader";
+import Elevador from "../data/elevador.png";
+import Farol from "../data/farol.png";
 
 const Home = () => {
   // Loading state
@@ -41,15 +41,13 @@ border-color: red;
       <div className="cloud">
         <div className="cloud-span">
           {" "}
-          <span>
-            Fique por dentro de tudo <br /> que acontece por aqui
-          </span>
+          <span>Fique por dentro de tudo que acontece por aqui</span>
         </div>
       </div>
       <input
         type="search"
         className="busca-home"
-        placeholder="Busque por eventos e Destinos"
+        placeholder="Busque por Eventos e Serviços"
         id="busca-eventos"
       />
       <div className="services slideInUp slidein">
@@ -107,6 +105,48 @@ border-color: red;
           >
             <img src={Others} alt="" />
             Outros
+          </div>
+        </div>
+        <div className="ondeIr">
+          <div className="inline">
+            <span>Onde Ir?</span>
+            <span>Ver todos</span>
+          </div>
+
+          <div className="locals">
+            <div>
+              <img src={Elevador} alt="" />
+              <p className="localName"> Elevador Lacerda</p>
+              <p>Nota</p>
+              <p>Atração Turistica Praça Tomé de Souza, S/N</p>
+              <p>Antigo elevador famoso com vista</p>
+              <div className="close">
+                <span style={{ color: "red" }}>Fechado</span>
+                <span> • Abre às 6:00</span>
+              </div>
+            </div>
+            <div>
+              <img src={Farol} alt="" />
+              <p className="localName"> Elevador Lacerda</p>
+              <p>Nota</p>
+              <p>Atração Turistica Praça Tomé de Souza, S/N</p>
+              <p>Antigo elevador famoso com vista</p>
+              <div className="close">
+                <span style={{ color: "red" }}>Fechado</span>
+                <span> • Abre às 6:00</span>
+              </div>
+            </div>
+            <div>
+              <img src={Elevador} alt="" />
+              <p className="localName"> Elevador Lacerda</p>
+              <p>Nota</p>
+              <p>Atração Turistica Praça Tomé de Souza, S/N</p>
+              <p>Antigo elevador famoso com vista</p>
+              <div className="close">
+                <span style={{ color: "red" }}>Fechado</span>
+                <span> • Abre às 6:00</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
