@@ -3,7 +3,7 @@ import "./index.css";
 import Logo from "../data/Logo.png";
 import Casa from "../data/image 6.png";
 import Visto from "../data/image 7.png";
-import Serviços from "../data/dados"
+import {Dias, Horas, Mes, Serviços} from "../data/dados"
 const Infos = () => {
   
 
@@ -56,13 +56,26 @@ const Infos = () => {
         <div className="serviçosDisponiveis">
           <span>Serviços Disponíveis</span>
           {Serviços.map((service, index) => 
-            <div key={service + index}> <li>{service.name}</li> </div>
+            <li key={service + index}>{service.name} </li>
           )}
         </div>
-        <div className="diaHora"></div>
+        <div className="diaHora">
+          <span>Dia</span>
+          <div className="horizontal-section">
+          {Mes.map((dia, index) => 
+            <div key={dia + index}>{dia.day} </div>
+          )}
+          </div>
+          
+          <span>Hora</span>
+          <div className="horizontal-section">
+          {Horas.map((hora, index) => 
+          <div key={hora+index}> {hora.horario} </div>  )}
+          </div>
+        </div>
         <button
           onClick={() => {
-            window.location = "/informação-serviço";
+            window.location = "/sucesso";
           }}
           className="agendarButton infoBtn"
           type="button"

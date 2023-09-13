@@ -473,13 +473,86 @@ label span:nth-child(3) {
 
 .diaHora {
   width: 100vh;
-  background-color: blueviolet;
-  height: 20%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+ .diaHora span {
+font-size: 18px;
+font-weight: 600;
+color: #0165fc;
+font-family: "Poppins", sans-serif;
+ }
 
 .infoBtn {
   position: unset;
   margin: 0 auto;
 }
 
+.horizontal-section {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 10px;
+  display: -webkit-box;
+  width: 700px;
+  height: 50px;
+  max-width: 80vw;
+  gap: 7px;
+}
+
+.horizontal-section div {
+  scroll-snap-align: center;
+  border: 1px solid black;
+  height: 40px;
+  padding: 9px;
+  border-radius: 20px;
+  text-align: center;
+  width: 85px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
 /* InfoServices */
+
+
+/* Sucesso */
+
+.agendamento{
+  text-align: center;
+  display: block;
+  
+}
+
+.sucess{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.moradia {
+  display: flex;
+  align-items: center;
+}
+
+.dataSucess{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.horarioSucess{
+  font-size: 40px;
+  color: #0165fc;
+  font-weight: 600;
+  line-height: 65px;
+}
+
+.BtnFinal{
+  position: inherit;
+}
+/* Sucesso */
