@@ -1,5 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
+@media (min-width: 1026px) {
+  * {
+    visibility: hidden;
+    font-family: "Inter", sans-serif;
+  }
+  .divAnuncio {
+    visibility: visible;
+    font-size: 35px;
+    text-align: center;
+    width: 285px;
+    margin-left: 40%;
+    color: #666666;
+    padding-top: 20%;
+    display: flex;
+  }
+}
+
+@media (max-width: 1024px) {
+  .divAnuncio {
+    visibility: hidden;
+    height: 0px;
+  }
+}
+
 @keyframes slidein {
   from {
     margin-top: 300%;
@@ -461,6 +485,11 @@ label span:nth-child(3) {
 /* Agendar */
 
 /* InfoServices */
+
+.selection-div-dia:hover {
+  background-color: #0165fc;
+  color: #dbeafe;
+}
 
 .openServices {
   height: 80vh;

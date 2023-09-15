@@ -34,6 +34,7 @@ border-color: red;
     <Splash />
   ) : (
     <div className="home">
+      <div className="divAnuncio">Acesse o site em um dispositivo Mobile</div>
       <Menu />
       <div>
         <img className="cover" src={Fundo} alt="fundo-home" />

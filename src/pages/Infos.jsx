@@ -3,10 +3,8 @@ import "./index.css";
 import Logo from "../data/Logo.png";
 import Casa from "../data/image 6.png";
 import Visto from "../data/image 7.png";
-import {Dias, Horas, Mes, Serviços} from "../data/dados"
+import { Dias, Horas, Mes, Serviços } from "../data/dados";
 const Infos = () => {
-  
-
   return (
     <div>
       <div className="footer">
@@ -55,22 +53,28 @@ const Infos = () => {
         </div>
         <div className="serviçosDisponiveis">
           <span>Serviços Disponíveis</span>
-          {Serviços.map((service, index) => 
+          {Serviços.map((service, index) => (
             <li key={service + index}>{service.name} </li>
-          )}
+          ))}
         </div>
         <div className="diaHora">
           <span>Dia</span>
           <div className="horizontal-section">
-          {Mes.map((dia, index) => 
-            <div key={dia + index}>{dia.day} </div>
-          )}
+            {Mes.map((dia, index) => (
+              <div className="selection-div-dia" key={dia + index}>
+                {dia.day}{" "}
+              </div>
+            ))}
           </div>
-          
+
           <span>Hora</span>
           <div className="horizontal-section">
-          {Horas.map((hora, index) => 
-          <div key={hora+index}> {hora.horario} </div>  )}
+            {Horas.map((hora, index) => (
+              <div className="selection-div-dia" key={hora + index}>
+                {" "}
+                {hora.horario}{" "}
+              </div>
+            ))}
           </div>
         </div>
         <button
