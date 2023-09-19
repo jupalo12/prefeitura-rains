@@ -11,6 +11,7 @@ import Others from "../data/more.png";
 import Splash from "./Splash";
 import Elevador from "../data/elevador.png";
 import Farol from "../data/farol.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   // Loading state
@@ -20,10 +21,10 @@ const Home = () => {
     // Wait for 3 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 2300);
   }, []);
 
-  // Custom css for loader
+  // Custom css para o loader
   const override = `
 display: block;
 margin: 0 auto;
@@ -53,7 +54,7 @@ border-color: red;
       />
       <div className="services slideInUp slidein">
         <div className="navigate">
-          <span>Navegue Pelos Nossos Seriços </span>
+          <span>Navegue pelos nossos serviços </span>
           <div
             onClick={() => {
               window.location = "/";
@@ -71,14 +72,9 @@ border-color: red;
             <img src={Guide} alt="" />
             Guia Turístico
           </div>
-          <div
-            onClick={() => {
-              window.location = "/agendar";
-            }}
-            className="links"
-          >
+          <div className="links">
             <img src={Agenda} alt="" />
-            Agendar Serviços
+            <Link to="/agendar">Agendar Serviços</Link>
           </div>
           <div
             onClick={() => {

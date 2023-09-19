@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.93effbd1.css",
+    "main.js": "/static/js/main.0c61abaa.js",
+    "static/media/fundo.png": "/static/media/fundo.539aa2a49cee75b8ae82.png",
+    "static/media/home-fundo.png": "/static/media/home-fundo.6baa6c2b184ca760e646.png",
+    "static/media/elevador.png": "/static/media/elevador.4d9ebc069d0b6b738a9c.png",
+    "static/media/prefeitura-logo-centro.png": "/static/media/prefeitura-logo-centro.e70192e7292459235ec7.png",
+    "static/media/farol.png": "/static/media/farol.82d02d324c0ea2e37578.png",
+    "static/media/prefeitura-logo.png": "/static/media/prefeitura-logo.122914e8cbc164f4290b.png",
+    "index.html": "/index.html",
+    "main.93effbd1.css.map": "/static/css/main.93effbd1.css.map",
+    "main.0c61abaa.js.map": "/static/js/main.0c61abaa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93effbd1.css",
+    "static/js/main.0c61abaa.js"
+  ]
+}

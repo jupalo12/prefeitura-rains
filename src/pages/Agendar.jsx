@@ -8,7 +8,9 @@ const Agendar = () => {
     <div>
       <div className="footer">
         <svg
-        onClick={() => {window.location = "/"}}
+          onClick={() => {
+            window.location = "/";
+          }}
           width="28"
           height="28"
           viewBox="0 0 28 28"
@@ -49,7 +51,13 @@ const Agendar = () => {
             <p>Casa e Moradia</p>
             <p>Alvarás, edificações, IPTU.</p>
           </div>
-          <button onClick={() => {window.location = "/informação-serviço"}} className="agendarButton" type="button">
+          <button
+            onClick={() => {
+              window.location = "/informacao";
+            }}
+            className="agendarButton"
+            type="button"
+          >
             Realizar Agendamento
           </button>
         </div>
@@ -65,11 +73,17 @@ const Agendar = () => {
             <p>Casa e Moradia</p>
             <p>Alvarás, edificações, IPTU.</p>
           </div>
-          <button onClick={() => {window.location = "/informação-serviço"}} className="agendarButton btn2" type="button">
+          <button
+            onClick={() => {
+              window.location = "/informacao";
+            }}
+            className="agendarButton btn2"
+            type="button"
+          >
             Realizar Agendamento
           </button>
         </div>
-        
+
         <div className="realizarAgendamento3">
           <div className="quadro">
             <img src={Casa} alt="" />
@@ -82,11 +96,17 @@ const Agendar = () => {
             <p>Casa e Moradia</p>
             <p>Alvarás, edificações, IPTU.</p>
           </div>
-          <button onClick={() => {window.location = "/informação-serviço"}} className="agendarButton btn3" type="button">
+          <button
+            onClick={() => {
+              window.location = "/informacao";
+            }}
+            className="agendarButton btn3"
+            type="button"
+          >
             Realizar Agendamento
           </button>
         </div>
-             <div className="realizarAgendamento4">
+        <div className="realizarAgendamento4">
           <div className="quadro">
             <img src={Casa} alt="" />
           </div>
@@ -98,13 +118,16 @@ const Agendar = () => {
             <p>Casa e Moradia</p>
             <p>Alvarás, edificações, IPTU.</p>
           </div>
-          <button onClick={() => {window.location = "/informação-serviço"}} className="agendarButton btn4" type="button">
+          <button
+            onClick={() => {
+              window.location = "/informacao";
+            }}
+            className="agendarButton btn4"
+            type="button"
+          >
             Realizar Agendamento
           </button>
         </div>
-        
-        
-        
       </div>
     </div>
   );
